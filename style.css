@@ -1,0 +1,99 @@
+.federo-regular {
+  font-family: "Federo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.vujahday-script-regular {
+  font-family: "Vujahday Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #4770BF;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-white {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .background-furina {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    width: 35rem;
+    height: 100%;
+    background-image: url('images/Furina-home.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.03;
+}
+
+.button-home {
+    width: auto;
+    padding: 20px 30px;
+    justify-content: center;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    background-color: #5C94FF;
+}
+
+/* hero right */
+
+.hero-right .circle {
+    position: absolute;
+    bottom: -17rem;
+    right: -5rem;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.hero-right .circle2 {
+    position: absolute;
+    bottom: -13rem;
+    right: -1rem;
+    width: 53rem;
+    height: 53rem;
+    border-radius: 50%;
+    border: 3px dashed white;
+}
+.hero-right .circle3 {
+    position: absolute;
+    bottom: -10rem;
+    right: 2rem;
+    width: 47rem;
+    height: 47rem;
+    border-radius: 50%;
+    border: 4rem solid white;
+}
+
+.hero-right .oval {
+    position: absolute;
+    bottom: -5rem;
+    right: -10rem;
+    width: 130rem;
+    height: 55rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.furina-img {
+    position: absolute;
+    bottom: -2rem;
+    right: 10rem;
+    width: 33rem;
+    height: auto;
+}
