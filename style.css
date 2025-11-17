@@ -1,16 +1,28 @@
+/* ============= Style Fonts ============ */
+
 .federo-regular {
-  font-family: "Federo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .vujahday-script-regular {
-  font-family: "Vujahday Script", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Vujahday Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.container {
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-shadow {
+    text-shadow: 4px 2px 2px rgba(35, 35, 35, 0.5);
+}
+
+.my-container {
     height: 100vh;
     width: 100%;
     background-color: #4770BF;
@@ -19,15 +31,23 @@
     overflow: hidden;
 }
 
+.container-appearance {
+    width: 100%;
+    background-color: #4770BF;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
 .container-white {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: white;
     position: relative;
     overflow: hidden;
 }
 
-.container .background-furina {
+.my-container .background-furina {
     position: absolute;
     top: 0;
     left: 10rem;
@@ -36,7 +56,7 @@
     background-image: url('images/Furina-home.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.03;
+    opacity: 0.05;
 }
 
 .button-home {
@@ -61,6 +81,7 @@
     border-radius: 50%;
     border: 3px solid white;
 }
+
 .hero-right .circle2 {
     position: absolute;
     bottom: -13rem;
@@ -70,6 +91,7 @@
     border-radius: 50%;
     border: 3px dashed white;
 }
+
 .hero-right .circle3 {
     position: absolute;
     bottom: -10rem;
@@ -96,4 +118,183 @@
     right: 10rem;
     width: 33rem;
     height: auto;
+}
+
+/* responsive hero-right */
+@media (max-width: 1280px) {
+    .hero-right .circle {
+        width: 50rem;
+        height: 50rem;
+        bottom: -15rem;
+        right: -3rem;
+    }
+
+    .hero-right .circle2 {
+        width: 43rem;
+        height: 43rem;
+        bottom: -11rem;
+        right: 0rem;
+    }
+
+    .hero-right .circle3 {
+        width: 37rem;
+        height: 37rem;
+        bottom: -8rem;
+        right: 3rem;
+    }
+
+    .hero-right .furina-img {
+        width: 25rem;
+        right: 8rem;
+        bottom: -1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-right .circle {
+        width: 40rem;
+        height: 40rem;
+        bottom: -13rem;
+        right: -2rem;
+    }
+
+    .hero-right .circle2 {
+        width: 33rem;
+        height: 33rem;
+        bottom: -9rem;
+        right: 1rem;
+    }
+
+    .hero-right .circle3 {
+        width: 27rem;
+        height: 27rem;
+        bottom: -6rem;
+        right: 4rem;
+    }
+
+    .hero-right .furina-img {
+        width: 22rem;
+        right: 7rem;
+        bottom: -1rem;
+    }
+}
+
+/* Tambahkan ini ke CSS Anda */
+
+@media (max-width: 768px) {
+    .my-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Sembunyikan circles pada mobile */
+    .hero-right .circle,
+    .hero-right .circle2,
+    .hero-right,
+    .hero-right .oval {
+        display: none;
+    }
+
+    .hero-right .circle3 {
+        width: 30vh;
+        height: 30vh;
+        border: 2rem solid white;
+        top: 9rem;
+        left: 5.5rem;
+    }
+
+    /* Hero right (foto Furina) pindah ke atas */
+    .hero-right {
+        order: 1;
+        width: 100%;
+        height: 50vh;
+        border: 2px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .furina-img {
+        position: relative;
+        max-width: 12rem;
+        left: 0rem;
+        top: -1rem;
+        margin: 0 auto;
+    }
+
+    /* Hero left pindah ke bawah */
+    .hero-left {
+        order: 2;
+        width: 100% !important;
+        height: 50vh;
+        padding: 2rem;
+    }
+
+    /* Sesuaikan ukuran teks */
+    .furina-name h1,
+    .furina-name h2 {
+        font-size: 3rem !important;
+    }
+
+    .furina-name {
+        justify-content: center !important;
+    }
+
+    /* Background furina adjustment */
+    .my-container .background-furina {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    /* Sembunyikan atau sesuaikan nav */
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1rem !important;
+        margin: 0 0.5rem !important;
+    }
+}
+
+/* Untuk layar sangat kecil */
+@media (max-width: 480px) {
+
+    .furina-name h1,
+    .furina-name h2 {
+        font-size: 2rem !important;
+    }
+
+    .furina-img {
+        max-width: 11rem;
+        left: 0rem;
+        top: 2rem;
+        margin: 0 auto;
+    }
+
+    .rating span {
+        font-size: 1rem !important;
+    }
+
+    .rating-text {
+        font-size: 1rem !important;
+    }
+
+    .button-home {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-height: 700px ) and (max-width: 480px) {
+    .hero-left {
+        height: auto !important;
+        padding-bottom: 4rem;
+    }
+    .furina-img {
+        max-width: 15rem;
+        top: 0rem;
+    }
 }
