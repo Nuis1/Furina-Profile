@@ -31,6 +31,15 @@
     overflow: hidden;
 }
 
+.my-container2 {
+    background-color: #4770BF;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
 .container-appearance {
     width: 100%;
     background-color: #4770BF;
@@ -40,8 +49,6 @@
 }
 
 .container-white {
-    height: auto;
-    width: 100%;
     background-color: white;
     position: relative;
     overflow: hidden;
@@ -297,4 +304,69 @@
         max-width: 15rem;
         top: 0rem;
     }
+}
+
+
+/* ======== talent section ========  */
+
+.my-container2 .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #3760AF;
+    padding: 1rem;
+}
+
+.my-container2 .card-content {
+    width: 95%;
+}
+
+.my-container2 .title-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid #A7A7A7;
+    margin : 20px 0rem;
+}
+
+.my-container2 .title-line::before,
+.my-container2 .title-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border: 1px solid #A7A7A7;
+}
+
+.my-container2 .title-line::before {
+    left: -12px;
+}
+
+.my-container2 .title-line::after {
+    right: -12px;
+}
+
+.icons-wrapper {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.icons-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.my-container2 .card .card-content .type-skill {
+    margin-top: 4px;
+    margin-bottom: 5px;
+    margin-top: 2rem;
+    color: #FFC300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.my-container2 .card .card-content .description {
+    margin-bottom: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
