@@ -160,67 +160,279 @@
         </div>
     </div>
     <!-- ========== Talent Section ========== -->
-    <div class="my-container2 w-full h-auto min-h-screen">
-        <div class="card">
-            <div class="card-content">
+    <div class="my-container2 w-full h-auto flex justify-center min-h-screen">
+        <div class="card flex flex-col">
+            <div class="card-header items-center flex flex-col">
                 <div class="title font-righteous-regular text-shadow font-bold text-[4vh]">Talenta</div>
                 <div class="title-line"></div>
-                <div class="icons-wrapper overflow-x-auto overflow-y-hidden">
-                    <div class="icons-talent flex items-center gap-3 md:gap-12 mb-6 flex-nowrap min-w-max h-auto">
-                        <div class="icon w-20 h-20 sm:w-30 sm:h-30 md:w-40 md:h-40 flex-shrink-0 relative">
-                            <svg class="w-full h-full" viewBox="0 0 165 162" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
-                                <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
-                                <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
-                                <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
-                                    fill="#06A8FF" />
-                                <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
-                            </svg>
-                            <img src="images/assets/attack.png" alt=""
-                                class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
-                        </div>
-                        <div class="icon w-15 h-15 sm:w-25 sm:h-25 md:w-30 md:h-30 flex-shrink-0 relative">
-                            <img src="images/assets/skill.png" alt="">
-                        </div>
-                        <div class="icon w-15 h-15 sm:w-25 sm:h-25 md:w-30 md:h-30 flex-shrink-0 relative">
-                            <img src="images/assets/burst.png" alt="">
-                        </div>
-                        <div class="icon w-15 h-15 sm:w-25 sm:h-25 md:w-30 md:h-30 flex-shrink-0 relative">
-                            <img src="images/assets/endless-waltz.png" alt="">
-                        </div>
-                        <div class="icon w-15 h-15 sm:w-25 sm:h-25 md:w-30 md:h-30 flex-shrink-0 relative">
-                            <img src="images/assets/unheard-confession.png" alt="">
-                        </div>
-                        <div class="icon w-15 h-15 sm:w-25 sm:h-25 md:w-30 md:h-30 flex-shrink-0 relative">
-                            <img src="images/assets/the-sea-is-my-stage.png" alt="">
+                <div class="talents flex w-full items-start">
+                    <div id="talent" class="icons-wrapper overflow-x-auto overflow-y-hidden">
+                        <div class="icons-talent flex items-center gap-3 md:gap-12 mb-6 flex-nowrap min-w-max h-auto">
+                            <div id="normal-attack" data-target="normal-attack-section" onclick="activateSvg(this)"
+                                class="icon active w-20 h-20 sm:w-30 sm:h-30 md:w-33 md:h-33 flex-shrink-0 relative">
+                                <svg id="svg1" class="svg w-full h-full" viewBox="0 0 165 162" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
+                                    <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
+                                    <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
+                                    <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
+                                        fill="#06A8FF" />
+                                    <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
+                                </svg>
+                                <img src="images/assets/attack.png" alt=""
+                                    class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <div id="normal-attack" data-target="elemental-skill-section" onclick="activateSvg(this)"
+                                class="icon w-20 h-20 sm:w-30 sm:h-30 md:w-33 md:h-33 flex-shrink-0 relative">
+                                <svg id="svg1" class="svg w-full h-full" viewBox="0 0 165 162" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
+                                    <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
+                                    <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
+                                    <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
+                                        fill="#06A8FF" />
+                                    <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
+                                </svg>
+                                <img src="images/assets/skill.png" alt=""
+                                    class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <div id="normal-attack" data-target="elemental-burst-section" onclick="activateSvg(this)"
+                                class="icon w-20 h-20 sm:w-30 sm:h-30 md:w-33 md:h-33 flex-shrink-0 relative">
+                                <svg id="svg1" class="svg w-full h-full" viewBox="0 0 165 162" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
+                                    <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
+                                    <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
+                                    <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
+                                        fill="#06A8FF" />
+                                    <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
+                                </svg>
+                                <img src="images/assets/burst.png" alt=""
+                                    class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <div id="normal-attack" data-target="skill-passive-section" onclick="activateSvg(this)"
+                                class="icon w-20 h-20 sm:w-30 sm:h-30 md:w-33 md:h-33 flex-shrink-0 relative">
+                                <svg id="svg1" class="svg w-full h-full" viewBox="0 0 165 162" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
+                                    <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
+                                    <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
+                                    <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
+                                        fill="#06A8FF" />
+                                    <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
+                                </svg>
+                                <img src="images/assets/endless-waltz.png" alt=""
+                                    class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <div id="normal-attack" data-target="skill-passive2-section" onclick="activateSvg(this)"
+                                class="icon w-20 h-20 sm:w-30 sm:h-30 md:w-33 md:h-33 flex-shrink-0 relative">
+                                <svg id="svg1" class="svg w-full h-full" viewBox="0 0 165 162" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
+                                    <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
+                                    <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
+                                    <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
+                                        fill="#06A8FF" />
+                                    <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
+                                </svg>
+                                <img src="images/assets/unheard-confession.png" alt=""
+                                    class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <div id="normal-attack" data-target="skill-passive3-section" onclick="activateSvg(this)" class="icon w-20 h-20 sm:w-30 sm:h-30 md:w-33 md:h-33 flex-shrink-0 relative">
+                                <svg class="svg w-full h-full" viewBox="0 0 165 162" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="82.0001" cy="81.7733" r="57.3333" stroke="#06A8FF" stroke-width="8" />
+                                    <path d="M82 0L102.785 26.25H61.2154L82 0Z" fill="#06A8FF" />
+                                    <path d="M165 81L138.75 101.785L138.75 60.2154L165 81Z" fill="#06A8FF" />
+                                    <path d="M-1.04907e-06 81L26.25 60.2154L26.25 101.785L-1.04907e-06 81Z"
+                                        fill="#06A8FF" />
+                                    <path d="M82 162L61.2154 135.75L102.785 135.75L82 162Z" fill="#06A8FF" />
+                                </svg>
+                                <img src="images/assets/the-sea-is-my-stage.png" alt=""
+                                    class="absolute top-1/2 left-1/2 w-[75%] h-[75%] transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="title-line"></div>
-                <div class="gif-talent w-full flex justify-center mt-6 mb-6">
-                    <img src="images/gif/normal-attack.gif" alt="">
+            </div>
+            <div id="normal-attack-section" class="card-content active">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="gif-talent w-full md:w-1/3 h-1/3 flex justify-center mt-6 mb-6">
+                        <img src="images/gif/normal-attack.gif" alt="">
+                    </div>
+                    <div class="description-talent w-full md:w-2/3">
+                        <div
+                            class="name-skill text-center md:text-start text-[2vh] sm:text-[3vh] font-bold font-righteous-regular">
+                            Normal attack: Soloist's
+                            Solicitation</div>
+                        <div class="type-skill text-[1.5vh] sm:text-[2vh]">Normal Attack</div>
+                        <div class="description text-[1.5vh] sm:text-[2vh]">Melancarkan hingga 4 serangan
+                            berturut-turut.
+                        </div>
+                        <div class="type-skill text-[1.5vh] sm:text-[2vh]">Charge Attack</div>
+                        <div class="description text-[1.5vh] sm:text-[2vh]">Mengonsumsi sejumlah Stamina, melancarkan
+                            tarian
+                            tunggal yang
+                            mengakibatkan Physical DMG terhadap musuh di sekitarnya, lalu mengganti Karakteristik Arkhe
+                            diri
+                            sendiri. Jika "Salon Members" atau "Singer of Many Waters" yang dipanggil oleh Elemental
+                            Skill
+                            "Salon Solitaires" miliknya berada di medan perang, barisan mereka juga akan turut berubah.
+                        </div>
+                        <div class="type-skill text-[1.5vh] sm:text-[2vh]">Arkhe: Seats Sacred and Secular</div>
+                        <div class="description text-[1.5vh] sm:text-[2vh]">Setiap satu kurun waktu tertentu, saat
+                            Normal
+                            Atack Furina
+                            mengenai musuh, akan menurunkan Spiritbreath Thorn atau Surging Blade berdasarkan
+                            Karakteristiknya
+                            saat ini dan mengakibatkan Hydro DMG Pneuma-Aligned atau Ousia-Aligned. Saat Furina berada
+                            di
+                            medan
+                            pertempuran, Arkhe awalnya adalah Ousia.</div>
+                        <div class="type-skill text-[1.5vh] sm:text-[2vh]">Plunging Attack</div>
+                        <div class="description text-[1.5vh] sm:text-[2vh]">Menenerjang dari udara untuk menghantam
+                            tanah,
+                            menyerang musuh di
+                            jalur terjangan dan mengakibatkan DMG Area saat mendarat.</div>
+                    </div>
                 </div>
-                <div class="name-skill text-center text-[2vh] font-bold font-righteous-regular">Normal attack: Soloist's
-                    Solicitation</div>
-                <div class="type-skill text-[1.5vh]">Normal Attack</div>
-                <div class="description text-[1.5vh]">Melancarkan hingga 4 serangan berturut-turut.</div>
-                <div class="type-skill text-[1.5vh]">Charge Attack</div>
-                <div class="description text-[1.5vh]">Mengonsumsi sejumlah Stamina, melancarkan tarian tunggal yang
-                    mengakibatkan Physical DMG terhadap musuh di sekitarnya, lalu mengganti Karakteristik Arkhe diri
-                    sendiri. Jika "Salon Members" atau "Singer of Many Waters" yang dipanggil oleh Elemental Skill
-                    "Salon Solitaires" miliknya berada di medan perang, barisan mereka juga akan turut berubah.</div>
-                <div class="type-skill text-[1.5vh]">Arkhe: Seats Sacred and Secular</div>
-                <div class="description text-[1.5vh]">Setiap satu kurun waktu tertentu, saat Normal Atack Furina
-                    mengenai musuh, akan menurunkan Spiritbreath Thorn atau Surging Blade berdasarkan Karakteristiknya
-                    saat ini dan mengakibatkan Hydro DMG Pneuma-Aligned atau Ousia-Aligned. Saat Furina berada di medan
-                    pertempuran, Arkhe awalnya adalah Ousia.</div>
-                <div class="type-skill text-[1.5vh]">Plunging Attack</div>
-                <div class="description text-[1.5vh]">Menenerjang dari udara untuk menghantam tanah, menyerang musuh di
-                    jalur terjangan dan mengakibatkan DMG Area saat mendarat.</div>
+            </div>
+            <div id="elemental-skill-section" class="card-content">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="gif-talent w-full md:w-1/3 h-1/3 flex justify-center mt-6 mb-6">
+                        <img src="images/gif/elemental-skill.gif" alt="">
+                    </div>
+                    <div class="description-talent w-full md:w-2/3">
+                        <div
+                            class="name-skill text-center md:text-start text-[2vh] sm:text-[3vh] font-bold font-righteous-regular">
+                            Salon Solitaire</div>
+                        <div class="description text-[1.5vh] mt-4 sm:text-[2vh]">Mengundang tamu-tamu dari Salon
+                            Solitaire untuk
+                            bergabung ke dalam barisan dan membantu perjuntukan Furina. Tamu yang diundang termasuk
+                            "Salon Members" atau "Singer of Many Waters", ditentukan berdasarkan <span
+                                style="color: #FFC300;">Karakteristik Arkhe</span> Furina
+                            saat
+                            ini.
+                        </div>
+                        <div class="type-skill text-[1.5vh] sm:text-[2vh]">Ousia</div>
+                        <div class="description text-[1.5vh] sm:text-[2vh]">Membentuk gelembung yang berpesta ria dan
+                            mengakibatkan <span style="color: #FFC300">Hydro Damage</span> Area yang didasarkan pada Max
+                            HP Furina, dan memanggil tiga "Salon
+                            Member", yaitu: "Gentilhomme Usher" yang berbentuk Ball Octopus, "Surintedante Chevalmarin"
+                            yang berbentuk Bubbly Seahorse, dan "Mademoiselle Crabaletta" yang berbentuk Armored Crab.
+                            Salon Members akan menyerang musuh di sekitar secara berkala, dengan prioritas menyerang
+                            target Karakter aktif lebih dulu,dan mengakibatkan <span style="color: #009BEF">Hydro
+                                Damage</span> yang didasarkan pada Max HP.
+                            Saat Salon Members menyerang, akan meningkatkan serangan tersebut berdasarkan jumlah anggota
+                            party di sekitar yang memiliki HP di atas 50%, dan akan mengonsumsi HP Karakter yang
+                            bersangkutan. Saat jumlah Karakter yang memenuhi syarat berjumlah 1/2/3/4 atau lebih, maka
+                            DMG serangan akan menjadi 110%/120%/130%/140% dari nilai awalnya.
+                        </div>
+                        <div class="type-skill text-[1.5vh] sm:text-[2vh]">Pneuma</div>
+                        <div class="description text-[1.5vh] sm:text-[2vh]">Memanggil "Singer of Many Waters" untuk
+                            memulihkan HP Karakter aktif di sekitar setiap satu kurun waktu tertentu. Jumlah pemulihan
+                            didasarkan pada Max HP.<br><br>
+
+                            Salon Member dan Singer of Many Waters berbagi durasi yang sama. Saat Furina mengganti
+                            formasi tamu melalui Charged Attack, tamu baru akan melanjutkan sisa durasi awal. <br>
+
+                            Furina dapat bergerak di atas permukaan air selama Salon Members atau Singer of Many Waters
+                            berada di medan pertempuran. <br><br>
+
+                            Daftar pengunjung tetap yang sering mengunjungi Salon Solitaire Furina. Di waktu yang lain,
+                            Mademoiselle Crabaletta, Surintendante Chevalmarin, dan Gentilhomme Usher akan berkunjung,
+                            dan di hari Rabu yang suram, para penyanyi yang akan datang.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="elemental-burst-section" class="card-content">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="gif-talent w-full md:w-1/3 h-1/3 flex justify-center mt-6 mb-6">
+                        <img src="images/gif/elemental-burst.gif" alt="">
+                    </div>
+                    <div class="description-talent w-full md:w-2/3">
+                        <div
+                            class="name-skill text-center md:text-start text-[2vh] sm:text-[3vh] font-bold font-righteous-regular">
+                            Let the People Rejoice</div>
+                        <div class="description text-[1.5vh] mt-4 sm:text-[2vh]">Mengumpulkan sukacita kebahagiaan dan
+                            membentuk panggung gelembung, mengakibatkan Hydro DMG Area yang didasarkan pada Max HP
+                            Furina, juga membuat anggota party di sekitar memasuki status Universal Revelry: Selama
+                            durasi berlangsung, saat HP Karakter tersebut bertambah atau berkurang, akan memberikan 1
+                            Fanfare Point kepada Furina berdasarkan setiap persentase perubahan HP Karakter yang
+                            bersangkutan. <br>
+                            Selain itu, DMG yang diakibatkan dan bonus pemulihan yang diterima seluruh anggota party di
+                            sekitar akan meningkat berdasrkan jumlah Fanfare Point yang dimiliki Furina. <br>
+
+                            Saat durasinya berakhir, Fanfare Point yang dimiliki oleh Furina akan dihapus. <br><br>
+
+
+                            <span style="font-style: italic;">"Bersoraklah! Pujilah! Terpesonalah! Angkat gelasmu!
+                                Karena setiap malam tanpa pesta adalah
+                                sebuah kesia-siaan terhadap siang hari yang menderita dan terjaga ... Dan, uh ... yang
+                                masih
+                                di bawah umur boleh minum jus anggur saja!"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skill-passive-section" class="card-content">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="description-talent w-full">
+                        <div
+                            class="name-skill text-center md:text-start text-[2vh] sm:text-[3vh] font-bold font-righteous-regular">
+                            Endless Waltz</div>
+                        <div class="description text-[1.5vh] mt-4 sm:text-[2vh]">Saat Karakter aktif di dalam party
+                            menerima pemulihan, jika pemulihan tersebut bukan berasal dari Furina sendiri dan
+                            pemulihannya berlebih, maka dalam 4 detik selanjutnya, Furina akan memberikan satu kali
+                            pemulihan terhadap Karakter di dalam party yang berada sekitar setiap 2 detik. Jumlah
+                            pemulihan adalah 2% Max HP Karakter yang bersangkutan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skill-passive2-section" class="card-content">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="description-talent w-full">
+                        <div
+                            class="name-skill text-center md:text-start text-[2vh] sm:text-[3vh] font-bold font-righteous-regular">
+                            Unheard Confession</div>
+                        <div class="description text-[1.5vh] mt-4 sm:text-[2vh]">Untuk setiap 1.000 poin Max HP Furina,
+                            akan memberikan buff yang berbeda berdasarkan <span style="color: #FFC300;">Salon
+                                Solitaire</span> Furina yang berada dalam
+                            karakteristik Arkhe yang berbeda: <br>
+
+                            Meningkatkan 0,7% DMG yang diakibatkan oleh Salon Members. Maksimum peningkatan DMG yang
+                            dapat diperoleh Salon Members dengan cara ini adalah 28%. <br>
+
+                            Mengurangi jeda pemulihan Singer of Many Waters terhadap Karakter aktif di sekitar sebesar
+                            0,4%. Maksimum pengurangan jeda yang dapat diperoleh dengan cara ini adalah 16%.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skill-passive3-section" class="card-content">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="description-talent w-full">
+                        <div
+                            class="name-skill text-center md:text-start text-[2vh] sm:text-[3vh] font-bold font-righteous-regular">
+                            The Sea is My Stage</div>
+                        <div class="description text-[1.5vh] mt-4 sm:text-[2vh]">Cooldown kemampuan Xenochromatic
+                            Fontemer Aberrant berkurang 30%.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Build Recomendation ========= -->
+    <div class="my-container2 w-full h-auto flex justify-center min-h-screen">
+        <div class="card flex flex-col mt-12">
+            <div class="card-header flex flex-col">
             </div>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
